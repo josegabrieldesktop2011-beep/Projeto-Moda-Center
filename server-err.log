@@ -1,0 +1,44 @@
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 1/3...
+The user aborted a request.
+
+Retrying 1/3...
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\postcss\node_modules\nanoid isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+<w> [webpack.cache.PackFileCacheStrategy/webpack.FileSystemInfo] Managed item C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\postcss\node_modules\nanoid isn't a directory or doesn't contain a package.json (see snapshot.managedPaths option)
+ ⨯ TypeError: _jose.EncryptJWT is not a constructor
+    at Object.encode (webpack-internal:///(rsc)/./node_modules/next-auth/jwt/index.js:41:16)
+    at async Object.callback (webpack-internal:///(rsc)/./node_modules/next-auth/core/routes/callback.js:393:22)
+    at async AuthHandler (webpack-internal:///(rsc)/./node_modules/next-auth/core/index.js:269:28)
+    at async NextAuthRouteHandler (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:57:28)
+    at async NextAuth._args$ (webpack-internal:///(rsc)/./node_modules/next-auth/next/index.js:89:16)
+    at async C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:55778
+    at async eO.execute (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:46527)
+    at async eO.handle (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\compiled\next-server\app-route.runtime.dev.js:6:57112)
+    at async doRender (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\base-server.js:1352:42)
+    at async cacheEntry.responseCache.get.routeKind (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\base-server.js:1562:40)
+    at async DevServer.renderToResponseWithComponentsImpl (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\base-server.js:1482:28)
+    at async DevServer.renderPageComponent (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\base-server.js:1908:24)
+    at async DevServer.renderToResponseImpl (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\base-server.js:1946:32)
+    at async DevServer.pipeImpl (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\base-server.js:921:25)
+    at async NextNodeServer.handleCatchallRenderRequest (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\next-server.js:272:17)
+    at async DevServer.handleRequestImpl (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\base-server.js:817:17)
+    at async C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\dev\next-dev-server.js:339:20
+    at async Span.traceAsyncFn (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\trace\trace.js:154:20)
+    at async DevServer.handleRequest (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\dev\next-dev-server.js:336:24)
+    at async invokeRender (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\lib\router-server.js:173:21)
+    at async handleRequest (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\lib\router-server.js:350:24)
+    at async requestHandlerImpl (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\lib\router-server.js:374:13)
+    at async Server.requestListener (C:\Users\GABRIEL\Documents\Projeto-Moda-Center\node_modules\next\dist\server\lib\start-server.js:141:13)

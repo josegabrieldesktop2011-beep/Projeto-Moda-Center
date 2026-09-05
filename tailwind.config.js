@@ -1,0 +1,100 @@
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
+  theme: {
+    extend: {
+      colors: {
+        brand: {
+          50:  '#f5e9ff',
+          100: '#e9d3ff',
+          200: '#d3a7ff',
+          300: '#bd7bff',
+          400: '#a74fff',
+          500: '#7102b8',
+          600: '#5a019a',
+          700: '#4e017d',
+          800: '#3f0162',
+          900: '#33014e',
+          950: '#1f0030',
+        },
+        primary: {
+          50:  '#f5e9ff',
+          100: '#e9d3ff',
+          200: '#d3a7ff',
+          300: '#bd7bff',
+          400: '#a74fff',
+          500: '#4e017d',
+          600: '#3f0162',
+          700: '#33014e',
+          800: '#250038',
+          900: '#180024',
+          950: '#0d0014',
+        },
+        secondary: {
+          500: '#7102b8',
+          600: '#5a019a',
+        },
+        accent: {
+          orange: '#ff8000',
+          orangeLight: '#fe9f3f',
+          orangeDark: '#e67300',
+          gold: '#ffce00',
+          goldLight: '#ffda40',
+          goldDark: '#ebbc00',
+          red: '#ff0024',
+          redDark: '#bd060b',
+          green: '#0b7c2f',
+          blueLink: '#0070ab',
+        },
+        neutral: {
+          50: '#fafafa',
+          100: '#f5f5f5',
+          200: '#ececec',
+          300: '#dcdcdc',
+          400: '#bdbdbd',
+          500: '#999999',
+          600: '#666666',
+          700: '#444444',
+          800: '#202020',
+          900: '#1d1d1b',
+        },
+        gold: {
+          400: '#ffda40',
+          500: '#ffce00',
+          600: '#ebbc00',
+          700: '#d6ab00',
+        },
+      },
+      fontFamily: {
+        sans: ['UOLText', 'Arial', 'system-ui', '-apple-system', 'BlinkMacSystemFont', 'sans-serif'],
+        display: ['UOLDisplay', 'UOLText', 'Arial', 'sans-serif'],
+        uolLight: ['UOLTextLight', 'Arial', 'sans-serif'],
+        uolBold: ['UOLTextBold', 'Arial', 'sans-serif'],
+        uolBolder: ['UOLTextBolder', 'Arial', 'sans-serif'],
+      },
+      boxShadow: {
+        card: '0px 2px 8px 0px rgba(0,0,0,0.10)',
+        badge: '0px 8px 16px 0px rgba(0,0,0,0.05)',
+      },
+      animation: {
+        'fade-in': 'fadeIn 0.3s ease-in-out',
+        'slide-up': 'slideUp 0.3s ease-out',
+      },
+      keyframes: {
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideUp: {
+          '0%': { transform: 'translateY(10px)', opacity: '0' },
+          '100%': { transform: 'translateY(0)', opacity: '1' },
+        },
+      },
+    },
+  },
+  plugins: [],
+};

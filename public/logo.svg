@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" preserveAspectRatio="xMidYMid meet">
+  <defs>
+    <linearGradient id="lgOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFA726" />
+      <stop offset="100%" stop-color="#F57C00" />
+    </linearGradient>
+    <linearGradient id="lgBlue" x1="10%" y1="0%" x2="90%" y2="100%">
+      <stop offset="0%" stop-color="#42A5F5" />
+      <stop offset="100%" stop-color="#1565C0" />
+    </linearGradient>
+    <linearGradient id="lgYellow" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FFCA28" />
+      <stop offset="100%" stop-color="#FFB300" />
+    </linearGradient>
+    <linearGradient id="lgRed" x1="20%" y1="100%" x2="80%" y2="0%">
+      <stop offset="0%" stop-color="#EF5350" />
+      <stop offset="100%" stop-color="#C62828" />
+    </linearGradient>
+    <linearGradient id="lgGreen" x1="0%" y1="100%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#66BB6A" />
+      <stop offset="100%" stop-color="#2E7D32" />
+    </linearGradient>
+    <linearGradient id="lgGray" x1="0%" y1="100%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E0E0E0" />
+      <stop offset="100%" stop-color="#9E9E9E" />
+    </linearGradient>
+  </defs>
+
+  <g transform="translate(20,20) scale(0.92,0.92)">
+    <path d="M20,60 C120,80 C160,120 C200,200 C240,280 C260,360 C280,420 L160,480 C140,420 C120,320 C100,240 C80,160 C60,100 Z" fill="url(#lgOrange)" />
+    <path d="M80,40 C180,60 C220,100 C260,180 C300,260 C320,340 C340,400 L220,460 C200,400 C180,300 C160,220 C140,140 C120,80 Z" fill="url(#lgBlue)" />
+    <path d="M260,60 C300,120 C320,180 C340,240 C380,280 C420,320 C480,340 L460,460 C400,440 C340,400 C300,360 C280,300 C260,240 C240,160 Z" fill="url(#lgYellow)" />
+    <path d="M320,20 C360,80 C380,140 C400,200 C440,260 C480,300 C520,320 L500,440 C440,420 C380,380 C340,340 C320,280 C300,220 C280,140 Z" fill="url(#lgRed)" />
+    <path d="M0,340 C80,320 C160,320 C260,340 C360,380 C460,440 C510,480 L510,512 L0,512 Z" fill="url(#lgGreen)" />
+    <path d="M0,400 C100,380 C200,400 C300,440 C400,500 L400,512 L0,512 Z" fill="url(#lgGray)" />
+  </g>
+</svg>

@@ -1,0 +1,80 @@
+  ▲ Next.js 14.2.15
+  - Local:        http://localhost:3001
+  - Environments: .env.local, .env
+
+ ✓ Starting...
+ ✓ Ready in 1709ms
+ ○ Compiling / ...
+ ✓ Compiled / in 7.7s (749 modules)
+ GET / 200 in 8119ms
+ ✓ Compiled in 474ms (363 modules)
+ ○ Compiling /auth/login ...
+ ✓ Compiled /auth/login in 3.3s (759 modules)
+ GET /auth/login 200 in 3481ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 562ms (638 modules)
+ GET /api/auth/session 200 in 1049ms
+ GET / 200 in 124ms
+ ✓ Compiled /_not-found in 170ms (1010 modules)
+ GET /@vite/client 404 in 287ms
+ GET /api/auth/session 200 in 57ms
+ GET /api/auth/session 200 in 16ms
+ GET /auth/login 200 in 73ms
+ GET /@vite/client 404 in 23ms
+ GET /api/auth/session 200 in 34ms
+ GET /api/auth/session 200 in 16ms
+ GET /auth/login 200 in 77ms
+ GET /@vite/client 404 in 30ms
+ GET /api/auth/session 200 in 50ms
+ GET /api/auth/session 200 in 30ms
+ GET /auth/login 200 in 67ms
+ GET /api/auth/session 200 in 34ms
+ GET /@vite/client 404 in 18ms
+ GET /api/auth/session 200 in 25ms
+ ✓ Compiled in 447ms (773 modules)
+ ✓ Compiled in 262ms (773 modules)
+ ✓ Compiled in 536ms (773 modules)
+ ✓ Compiled in 265ms (773 modules)
+ ✓ Compiled in 432ms (773 modules)
+ ✓ Compiled in 174ms (383 modules)
+ ✓ Compiled in 199ms (383 modules)
+ ✓ Compiled in 195ms (383 modules)
+ ✓ Compiled in 298ms (773 modules)
+ ✓ Compiled in 212ms (383 modules)
+ ✓ Compiled /api/auth/[...nextauth] in 366ms (638 modules)
+ GET /api/auth/providers 200 in 485ms
+ GET /api/auth/csrf 200 in 14ms
+ POST /api/auth/callback/credentials 500 in 270ms
+ ✓ Compiled in 135ms (390 modules)
+ GET /auth/login 200 in 175ms
+ ○ Compiling /api/auth/[...nextauth] ...
+ ✓ Compiled /api/auth/[...nextauth] in 577ms (1009 modules)
+ ✓ Compiled in 1ms (638 modules)
+ ✓ Compiled in 204ms (1009 modules)
+ GET /api/auth/session 200 in 917ms
+ GET /@vite/client 404 in 1061ms
+ GET /api/auth/session 200 in 30ms
+ GET /api/auth/providers 200 in 30ms
+ GET /api/auth/csrf 200 in 16ms
+ POST /api/auth/callback/credentials 200 in 265ms
+ GET /api/auth/session 200 in 15ms
+ GET / 200 in 82ms
+ POST /api/auth/_log 200 in 40ms
+ GET /@vite/client 404 in 42ms
+ GET /api/auth/session 200 in 19ms
+ GET /api/auth/session 200 in 18ms
+ GET /auth 404 in 74ms
+ POST /api/auth/_log 200 in 35ms
+ GET /@vite/client 404 in 28ms
+ GET /api/auth/session 200 in 33ms
+ GET /api/auth/session 200 in 16ms
+ GET /auth 404 in 82ms
+ POST /api/auth/_log 200 in 35ms
+ GET /@vite/client 404 in 27ms
+ GET /api/auth/session 200 in 35ms
+ GET /api/auth/session 200 in 20ms
+ GET / 200 in 78ms
+ POST /api/auth/_log 200 in 40ms
+ GET /@vite/client 404 in 47ms
+ GET /api/auth/session 200 in 19ms
+ GET /api/auth/session 200 in 16ms
