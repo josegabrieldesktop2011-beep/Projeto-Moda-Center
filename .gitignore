@@ -15,4 +15,3 @@ prisma/dev.db-journal
 coverage
 server*.log
 server*.pid
-.dyad/
