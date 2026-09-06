@@ -645,3 +645,28 @@ try {
   console.error('❌ Postinstall patch failed:', e.message || e);
   process.exit(0); // never fail the build due to stubs
 }
+
+// ============================================================
+// GLOBAL SAFETY TIMEOUT: Force exit after 45 seconds if hung
+// (Vercel npm install must never hang!)
+// ============================================================
+setTimeout(function () {
+  try {
+    console.warn('⚠️  Postinstall timeout reached (45s) - forcing safe exit');
+  } catch (_) {}
+  process.exit(0);
+}, 45000).unref && setTimeout(function () {
+  try { console.warn('⚠️  Postinstall timeout reached (45s) - forcing safe exit'); } catch (_) {}
+  process.exit(0);
+}, 45000).unref ? null : null;
+
+// Run timeout in all environments:
+(function setSafetyTimeout() {
+  try {
+    var t = setTimeout(function () {
+      try { console.warn('⚠️  Postinstall timeout 45s - safe exit'); } catch (e) {}
+      try { process.exit(0); } catch (e) {}
+    }, 45000);
+    if (typeof t.unref === 'function') { t.unref(); }
+  } catch (_ignore) {}
+})();
