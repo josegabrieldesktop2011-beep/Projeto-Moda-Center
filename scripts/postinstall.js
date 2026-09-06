@@ -5,13 +5,19 @@ const root = process.cwd();
 const nm = path.join(root, 'node_modules');
 
 function ensureDir(p) {
-  fs.mkdirSync(path.dirname(p), { recursive: true });
+  try {
+    fs.mkdirSync(path.dirname(p), { recursive: true });
+  } catch (_) {}
 }
 
 function write(p, content) {
-  ensureDir(p);
-  fs.writeFileSync(p, content, 'utf-8');
-  console.log('  ✓ patched', path.relative(root, p));
+  try {
+    ensureDir(p);
+    fs.writeFileSync(p, content, 'utf-8');
+    console.log('  ✓ patched', path.relative(root, p));
+  } catch (e) {
+    console.warn('  ⚠️  skip (write fail):', path.relative(root, p), '->', e.message || String(e));
+  }
 }
 
 // ============================================================

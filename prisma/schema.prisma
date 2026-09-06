@@ -101,8 +101,8 @@ model Product {
   description   String
   composition   String
   care          String?
-  price         Decimal
-  discountPrice Decimal?
+  price         Float
+  discountPrice Float?
   brand         String?
   categoryId    String?
   isActive      Boolean  @default(true)
@@ -181,8 +181,8 @@ model Coupon {
   code          String   @unique
   description   String?
   discountType  String
-  discountValue Decimal
-  minOrderValue Decimal  @default(0)
+  discountValue Float
+  minOrderValue Float    @default(0)
   maxUses       Int?
   usesPerClient Int?
   validFrom     DateTime?
@@ -212,10 +212,10 @@ model Order {
   orderNumber       String        @unique
   userId            String
   status            String        @default("AGUARDANDO_PAGAMENTO")
-  subtotal          Decimal
-  shippingCost      Decimal
-  discountTotal     Decimal
-  total             Decimal
+  subtotal          Float
+  shippingCost      Float
+  discountTotal     Float
+  total             Float
   couponId          String?
   paymentMethod     String
   paymentStatus     String        @default("PENDENTE")
@@ -248,9 +248,9 @@ model OrderItem {
   productName      String
   variantSize      String
   variantColor     String
-  unitPrice        Decimal
+  unitPrice        Float
   quantity         Int
-  subtotal         Decimal
+  subtotal         Float
 
   order         Order          @relation(fields: [orderId], references: [id], onDelete: Cascade)
   product       Product        @relation(fields: [productId], references: [id])
@@ -264,7 +264,7 @@ model OrderStatusLog {
   note      String?
   createdAt DateTime    @default(now())
 
-  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  order Order @relation(fields: [orderId], references: [id])
 }
 
 model OrderChatMessage {
@@ -276,7 +276,7 @@ model OrderChatMessage {
   isFromSeller Boolean
   createdAt    DateTime @default(now())
 
-  order Order @relation(fields: [orderId], references: [id], onDelete: Cascade)
+  order Order @relation(fields: [orderId], references: [id])
 }
 
 model AuditLog {
