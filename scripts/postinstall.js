@@ -647,26 +647,16 @@ try {
 }
 
 // ============================================================
-// GLOBAL SAFETY TIMEOUT: Force exit after 45 seconds if hung
-// (Vercel npm install must never hang!)
+// GLOBAL SAFETY TIMEOUT: Force exit after 3 minutes if hung
+// Vercel I/O is slower than local, give plenty of time
 // ============================================================
-setTimeout(function () {
-  try {
-    console.warn('⚠️  Postinstall timeout reached (45s) - forcing safe exit');
-  } catch (_) {}
-  process.exit(0);
-}, 45000).unref && setTimeout(function () {
-  try { console.warn('⚠️  Postinstall timeout reached (45s) - forcing safe exit'); } catch (_) {}
-  process.exit(0);
-}, 45000).unref ? null : null;
-
-// Run timeout in all environments:
 (function setSafetyTimeout() {
   try {
+    var THREE_MINUTES = 180 * 1000;
     var t = setTimeout(function () {
-      try { console.warn('⚠️  Postinstall timeout 45s - safe exit'); } catch (e) {}
+      try { console.warn('⚠️  Postinstall timeout reached (3min) - forcing safe exit'); } catch (e) {}
       try { process.exit(0); } catch (e) {}
-    }, 45000);
-    if (typeof t.unref === 'function') { t.unref(); }
+    }, THREE_MINUTES);
+    if (typeof t.unref === 'function') { try { t.unref(); } catch (_) {} }
   } catch (_ignore) {}
 })();
