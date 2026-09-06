@@ -67,7 +67,7 @@ export async function GET(req: NextRequest) {
           order: paidOrDelivered as any,
         },
         _sum: { quantity: true, priceAtPurchase: true },
-        orderBy: { _sum: { quantity: "desc" } as any,
+        orderBy: { _sum: { quantity: "desc" } as any },
         take: 30,
       }),
       prisma.product.findMany({

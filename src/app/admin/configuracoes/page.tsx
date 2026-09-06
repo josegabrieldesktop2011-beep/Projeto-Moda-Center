@@ -72,7 +72,7 @@ export default function AdminConfiguracoesPage() {
   });
 
   const [seguranca, setSeguranca] = useState({
-    2faObrigatorioStaff: false,
+    doisFAObrigatorioStaff: false,
     expiracaoSessaoDias: 30,
     tentativasLoginBloqueio: 5,
     tempoBloqueioMin: 30,
@@ -801,11 +801,11 @@ export default function AdminConfiguracoesPage() {
                 <label className="md:col-span-2 flex items-center gap-3 cursor-pointer select-none p-4 bg-amber-50 dark:bg-amber-900/20 rounded-xl border border-amber-200 dark:border-amber-800">
                   <input
                     type="checkbox"
-                    checked={seguranca["2faObrigatorioStaff"]}
+                    checked={seguranca.doisFAObrigatorioStaff}
                     onChange={(e) =>
                       setSeguranca({
                         ...seguranca,
-                        "2faObrigatorioStaff": e.target.checked,
+                        doisFAObrigatorioStaff: e.target.checked,
                       })
                     }
                     className="w-5 h-5 accent-amber-500 rounded"
